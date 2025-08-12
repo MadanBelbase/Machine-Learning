@@ -1,1 +1,1 @@
-another day of leraning 
+another day of learning 
