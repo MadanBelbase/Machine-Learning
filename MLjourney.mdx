@@ -1,606 +1,627 @@
 ---
 title: 200 Days Machine Learning Roadmap: From Zero to Advanced
-description: A comprehensive 200-day roadmap to learn machine learning from beginner to advanced, using free resources and research papers.
+description: A 200-day roadmap for beginners aiming for ML research, using both free resources and DataCamp (student account), with emphasis on research skills.
 ---
 
 # 200 Days Machine Learning Roadmap: From Zero to Advanced
 
-This roadmap guides absolute beginners (zero-level knowledge) through machine learning (ML) over 200 days, assuming 1-2 hours of daily study/practice. It progresses from foundational skills (math, programming) to core ML concepts, deep learning, and advanced topics, including research papers. Given your interest in tracking learning journeys (from your learning challenge website idea), you can integrate this roadmap into a GitHub-connected platform to monitor progress and send notifications.
+This roadmap is tailored for absolute beginners (zero-level) aspiring to pursue ML research in the future. It spans 200 days, assuming 1-2.5 hours of daily study/practice (adjust based on your 1.2-2.5 hour availability; focus on consistency). It combines free resources (YouTube, Kaggle, arXiv, etc.) with DataCamp courses (accessible via your student account) for interactive learning. To build research skills early, papers and reproduction exercises are integrated progressively, starting lightly and building to advanced research methods, paper critiques, and experiment design. This prepares you for future ML research (e.g., publishing in NeurIPS/ICML, grad school apps)
 
 **Key Guidelines:**
-- **Daily Structure:** Each day includes:
-  - **Theory:** Videos/readings (free resources).
-  - **Practice:** Coding exercises (use free platforms like Google Colab, Kaggle Notebooks).
-  - **Resources:** All free; links provided.
-- **Tools Needed:** Free Google account for Colab, GitHub for version control (learn basics early). Create a repo to track your ML projects, aligning with your goal of GitHub integration for progress tracking.
-- **Tracking Progress:** Maintain a GitHub repo for notebooks. Join free communities: Reddit r/MachineLearning, Kaggle forums. Optionally, log daily progress in a custom website (like your SlotSwapper project structure, using React/TypeScript).
-- **Research Papers:** Introduced from Day 100; read abstracts first, then full papers via arXiv (free). Use Papers with Code for implementations.
-- **Pacing:** Revisit tough topics. Take breaks every 30 days.
+- **Daily Structure:** 
+  - **Theory:** Mix of free videos/readings and DataCamp (student access) for hands-on.
+  - **Practice:** Coding in Colab/Kaggle/DataCamp exercises; reproduce concepts for research mindset.
+  - **Resources:** Both free and DataCamp; links provided. Focus on understanding "why" for research.
+- **Tools Needed:** Colab (free), GitHub (version control), DataCamp student account. Track in repo (`MadanBelbase/ML-200-Days-Challenge`).
+- **Git Tips (from your error):** Always `git pull origin main` before edits; resolve conflicts, then `git add`, `git commit`, `git push`.
+- **Tracking Progress:** Daily GitHub commits. Join r/MachineLearning, ML Discord. Build a research journal (notebook summaries, paper notes).
+- **Research Emphasis:** Early intro to papers (abstracts), building to critiques, reproductions, experiment design. End with research proposal and publishing basics.
+- **Pacing:** If time-constrained (1.2 hours), prioritize theory; extend to 2.5 for practice/papers. Breaks every 30 days.
 
 ## Phase 1: Foundations (Days 1-30)
-Build math and programming basics.
+Build basics with research-oriented questions (e.g., "Why is this math crucial for ML research?").
 
 ### Days 1-7: Python Basics
-- **Day 1:** Variables, data types, operations.  
-  Theory: [freeCodeCamp Python Tutorial (YouTube, 0-1hr)](https://www.youtube.com/watch?v=rfscVS0vtbw).  
-  Practice: Install Python via Anaconda (free); write "Hello World" in Jupyter Notebook.
-- **Day 2:** Control structures (if-else, loops).  
-  Theory: Continue freeCodeCamp (1-2hr).  
-  Practice: Solve 5 easy problems on [LeetCode Python](https://leetcode.com/problemset/all/?search=python).
-- **Day 3:** Functions, modules.  
-  Theory: [Automate the Boring Stuff Ch. 3 (free)](https://automatetheboringstuff.com/).  
-  Practice: Write a factorial function.
-- **Day 4:** Lists, tuples, dictionaries.  
-  Theory: Automate Ch. 4.  
-  Practice: Manipulate a list (sum, sort).
-- **Day 5:** Strings, file I/O.  
-  Theory: Automate Ch. 5-6.  
-  Practice: Read/write a text file.
-- **Day 6:** Error handling, basic OOP.  
-  Theory: [Python.org Tutorial](https://docs.python.org/3/tutorial/).  
-  Practice: Create a "Student" class.
-- **Day 7:** Review + Mini-Project: Build a calculator app.  
-  Practice: Use input() for interaction. Commit to GitHub.
+- **Day 1:** Variables, data types, operations. (1-1.5 hrs)  
+  Theory: [DataCamp: Introduction to Python](https://www.datacamp.com/courses/introduction-to-python) Ch1 + [freeCodeCamp Python (0-30min)](https://www.youtube.com/watch?v=rfscVS0vtbw).  
+  Practice: Colab "Hello World"; DataCamp exercises. Note: Python's role in ML research.
+- **Day 2:** Control structures (if-else, loops). (1.2-2 hrs)  
+  Theory: DataCamp Intro Python Ch2 + freeCodeCamp (30-60min).  
+  Practice: LeetCode easy problems; commit to GitHub.
+- **Day 3:** Functions, modules. (1-2 hrs)  
+  Theory: DataCamp Intermediate Python Ch1 + [Automate Ch3 (free)](https://automatetheboringstuff.com/).  
+  Practice: Factorial function. Research note: Modular code for reproducible experiments.
+- **Day 4:** Lists, tuples, dictionaries. (1.5-2.5 hrs)  
+  Theory: DataCamp Intermediate Python Ch2 + Automate Ch4.  
+  Practice: List manipulations.
+- **Day 5:** Strings, file I/O. (1-2 hrs)  
+  Theory: Automate Ch5-6 + DataCamp exercises.  
+  Practice: File handling. Note: Data loading for research datasets.
+- **Day 6:** Error handling, OOP. (1.2-2 hrs)  
+  Theory: DataCamp Intermediate Python Ch4 + [Python.org Tutorial (free)](https://docs.python.org/3/tutorial/).  
+  Practice: "Student" class.
+- **Day 7:** Review + Mini-Project: Calculator. (2-2.5 hrs)  
+  Practice: Build/commit. Research intro: Skim "Python for Data Analysis" (free PDF excerpts) abstract.
 
 ### Days 8-14: NumPy & Pandas
-- **Day 8:** NumPy arrays, operations.  
-  Theory: [NumPy Quickstart](https://numpy.org/doc/stable/user/quickstart.html).  
-  Practice: Vector addition in Colab.
-- **Day 9:** Indexing, slicing, broadcasting.  
-  Theory: [DataCamp NumPy Intro (free)](https://www.datacamp.com/tutorial/numpy-tutorial-python).  
-  Practice: Reshape arrays.
-- **Day 10:** Pandas Series, DataFrames.  
-  Theory: [Pandas 10min Tutorial](https://pandas.pydata.org/docs/user_guide/10min.html).  
-  Practice: Load CSV (Kaggle dataset).
-- **Day 11:** Data cleaning, missing values.  
-  Theory: Continue Pandas tutorial.  
-  Practice: Clean Titanic dataset.
-- **Day 12:** Grouping, merging DataFrames.  
-  Theory: [Kaggle Pandas Course (free)](https://www.kaggle.com/learn/pandas).  
-  Practice: Analyze sales data.
-- **Day 13:** Visualization with Matplotlib.  
-  Theory: [Matplotlib Tutorial](https://matplotlib.org/stable/tutorials/index.html).  
-  Practice: Plot line/bar charts.
-- **Day 14:** Review + Project: EDA on Iris dataset (sklearn). Commit to GitHub.
+- **Day 8:** NumPy arrays, operations. (1-2 hrs)  
+  Theory: [DataCamp: Intro to NumPy](https://www.datacamp.com/courses/introduction-to-numpy) Ch1 + [NumPy Quickstart (free)](https://numpy.org/doc/stable/user/quickstart.html).  
+  Practice: Vector ops.
+- **Day 9:** Indexing, slicing, broadcasting. (1.2-2 hrs)  
+  Theory: DataCamp NumPy Ch2.  
+  Practice: Array reshaping.
+- **Day 10:** Pandas Series, DataFrames. (1.5-2.5 hrs)  
+  Theory: [DataCamp: Pandas Manipulation](https://www.datacamp.com/courses/data-manipulation-with-pandas) Ch1 + [Pandas 10min (free)](https://pandas.pydata.org/docs/user_guide/10min.html).  
+  Practice: Load CSV.
+- **Day 11:** Data cleaning, missing values. (1-2 hrs)  
+  Theory: DataCamp Pandas Ch2.  
+  Practice: Clean Titanic (Kaggle free).
+- **Day 12:** Grouping, merging. (1.2-2 hrs)  
+  Theory: [Kaggle Pandas (free)](https://www.kaggle.com/learn/pandas) + DataCamp.  
+  Practice: Sales analysis.
+- **Day 13:** Matplotlib visualization. (1-2 hrs)  
+  Theory: [DataCamp: Matplotlib Intro](https://www.datacamp.com/courses/introduction-to-matplotlib).  
+  Practice: Plots.
+- **Day 14:** Review + Project: Iris EDA. (2-2.5 hrs)  
+  Practice: Commit. Research note: Data viz in papers.
 
-### Days 15-21: Math - Linear Algebra
-- **Day 15:** Vectors, scalars, matrices.  
-  Theory: [3Blue1Brown Linear Algebra (Ep1-2)](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab).  
-  Practice: NumPy matrix multiplication.
-- **Day 16:** Dot product, matrix operations.  
+### Days 15-21: Linear Algebra
+- **Day 15:** Vectors, matrices. (1-2 hrs)  
+  Theory: [3B1B Linear Algebra Ep1-2 (free)](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab) + DataCamp Linear Algebra Ch1.  
+  Practice: Matrix mult.
+- **Day 16:** Dot product, ops. (1.2-2 hrs)  
   Theory: 3B1B Ep3-4.  
-  Practice: Eigenvalues in NumPy.
-- **Day 17:** Systems of equations, inverses.  
-  Theory: [Khan Academy Linear Algebra](https://www.khanacademy.org/math/linear-algebra).  
-  Practice: Solve Ax=b.
-- **Day 18:** Vector spaces, basis.  
+  Practice: Eigenvalues.
+- **Day 17:** Equations, inverses. (1.5-2.5 hrs)  
+  Theory: [DataCamp: Linear Algebra for DS](https://www.datacamp.com/courses/linear-algebra-for-data-science-in-python) Ch1 + Khan (free).  
+  Practice: Solve systems.
+- **Day 18:** Vector spaces. (1-2 hrs)  
   Theory: 3B1B Ep5-6.  
-  Practice: Basis transformation.
-- **Day 19:** SVD basics.  
-  Theory: 3B1B Ep7-8.  
-  Practice: SVD on image data.
-- **Day 20:** ML applications (PCA preview).  
-  Theory: [Imperial College ML Math (Coursera, audit free)](https://www.coursera.org/learn/machine-learning-linear-regression).  
-  Practice: Dimensionality reduction.
-- **Day 21:** Review + Quiz: 10 linear algebra problems on [Brilliant.org](https://brilliant.org/) (free trial).
+  Practice: Transformations.
+- **Day 19:** SVD. (1.2-2 hrs)  
+  Theory: DataCamp Linear Algebra Ch2.  
+  Practice: Image SVD.
+- **Day 20:** ML apps (PCA). (1-2 hrs)  
+  Theory: Coursera ML Math (free audit).  
+  Practice: Reduction. Note: SVD in research (e.g., recommender systems).
+- **Day 21:** Review + Quiz. (2-2.5 hrs)  
+  Practice: Brilliant (free trial). Skim SVD paper abstract.
 
-### Days 22-30: Math - Calculus & Probability
-- **Day 22:** Derivatives, limits.  
-  Theory: [3Blue1Brown Calculus (Ep1-3)](https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr).  
-  Practice: SymPy derivatives.
-- **Day 23:** Gradients, partial derivatives.  
+### Days 22-30: Calculus & Probability
+- **Day 22:** Derivatives, limits. (1-2 hrs)  
+  Theory: 3B1B Calculus Ep1-3 (free).  
+  Practice: SymPy.
+- **Day 23:** Gradients. (1.2-2 hrs)  
   Theory: 3B1B Ep4-6.  
-  Practice: Gradient of function.
-- **Day 24:** Integrals, optimization.  
-  Theory: Khan Academy Calculus.  
-  Practice: SciPy integration.
-- **Day 25:** Probability (events, Bayes).  
-  Theory: [StatQuest Probability](https://www.youtube.com/watch?v=uzkc-qNVoOk).  
-  Practice: Simulate coin flips.
-- **Day 26:** Distributions (normal, binomial).  
-  Theory: StatQuest playlist.  
-  Practice: Plot with SciPy.
-- **Day 27:** Expectation, variance.  
-  Theory: [Seeing Theory](https://seeing-theory.brown.edu/).  
-  Practice: Compute stats.
-- **Day 28:** Hypothesis testing.  
-  Theory: Khan Academy Probability.  
-  Practice: T-test on data.
-- **Day 29:** Review math.  
-  Theory: Khan Academy quiz.
-- **Day 30:** Project: Gradient descent for linear regression (scratch). Push to GitHub.
+  Practice: Multivariable.
+- **Day 24:** Integrals, optimization. (1.5-2.5 hrs)  
+  Theory: [DataCamp: ML Fundamentals Track](https://www.datacamp.com/tracks/machine-learning-fundamentals-with-python) (calculus lessons).  
+  Practice: SciPy.
+- **Day 25:** Probability, Bayes. (1-2 hrs)  
+  Theory: [DataCamp: Statistics Intro](https://www.datacamp.com/courses/introduction-to-statistics-in-python) Ch1 + StatQuest (free).  
+  Practice: Simulations.
+- **Day 26:** Distributions. (1.2-2 hrs)  
+  Theory: DataCamp Statistics Ch2.  
+  Practice: Plots.
+- **Day 27:** Expectation, variance. (1-2 hrs)  
+  Theory: Seeing Theory (free interactive).  
+  Practice: Stats computation.
+- **Day 28:** Hypothesis testing. (1.5-2.5 hrs)  
+  Theory: DataCamp Statistics Ch3.  
+  Practice: T-test. Note: Stats in ML research (p-values, significance).
+- **Day 29:** Review math. (1-2 hrs)  
+  Theory: DataCamp quizzes.
+- **Day 30:** Project: Gradient descent from scratch. (2-2.5 hrs)  
+  Practice: Commit. Research: Note optimization in papers.
 
-## Phase 2: Introduction to ML (Days 31-60)
-Core concepts, data handling.
+## Phase 2: Intro to ML (Days 31-60)
+Core concepts with research questions (e.g., "How does this algorithm contribute to SOTA?").
 
-### Days 31-40: ML Basics & Supervised Learning
-- **Day 31:** ML types (supervised/unsupervised).  
-  Theory: [Andrew Ng ML Coursera Week 1 (audit free)](https://www.coursera.org/learn/machine-learning).  
-  Practice: Setup scikit-learn.
-- **Day 32:** Regression vs classification.  
-  Theory: Ng Week 2.  
-  Practice: Load Boston housing.
-- **Day 33:** Overfitting, bias-variance.  
-  Theory: [StatQuest Overfitting](https://www.youtube.com/watch?v=EuBBz3bI-aA).  
-  Practice: Plot learning curves.
-- **Day 34:** Train-test split, cross-validation.  
-  Theory: [Kaggle Intro to ML](https://www.kaggle.com/learn/intro-to-machine-learning).  
-  Practice: K-fold CV on Iris.
-- **Day 35:** Metrics: MSE, accuracy, precision/recall.  
-  Theory: Ng Week 3.  
-  Practice: Evaluate models.
-- **Day 36:** Linear Regression.  
-  Theory: [StatQuest Linear Regression](https://www.youtube.com/watch?v=nk2CQITm_eo).  
+### Days 31-40: ML Basics & Supervised
+- **Day 31:** ML types. (1-2 hrs)  
+  Theory: DataCamp ML Fundamentals Ch1 + Andrew Ng Week1 (free audit).  
+  Practice: Scikit-learn setup.
+- **Day 32:** Regression/classification. (1.2-2 hrs)  
+  Theory: DataCamp ML Fundamentals Ch2.  
+  Practice: Boston load.
+- **Day 33:** Overfitting, bias-variance. (1.5-2.5 hrs)  
+  Theory: [DataCamp: scikit-learn Supervised](https://www.datacamp.com/courses/supervised-learning-with-scikit-learn) Ch1 + StatQuest (free).  
+  Practice: Curves.
+- **Day 34:** Splits, CV. (1-2 hrs)  
+  Theory: DataCamp scikit-learn Ch2 + Kaggle Intro (free).  
+  Practice: K-fold.
+- **Day 35:** Metrics. (1.2-2 hrs)  
+  Theory: DataCamp scikit-learn Ch3.  
+  Practice: Evaluations. Note: Metrics in research evaluations.
+- **Day 36:** Linear Regression. (1-2 hrs)  
+  Theory: StatQuest (free) + DataCamp.  
   Practice: Fit model.
-- **Day 37:** Polynomial features, regularization.  
-  Theory: Ng Week 4.  
+- **Day 37:** Polynomial, regularization. (1.5-2.5 hrs)  
+  Theory: DataCamp scikit-learn Ch4.  
   Practice: Ridge/Lasso.
-- **Day 38:** Logistic Regression.  
-  Theory: StatQuest Logistic.  
-  Practice: Titanic classification.
-- **Day 39:** Decision Trees.  
-  Theory: [Kaggle Trees Course](https://www.kaggle.com/learn/intermediate-machine-learning).  
-  Practice: Build tree.
-- **Day 40:** Project: Predict house prices (Kaggle submission).
+- **Day 38:** Logistic. (1-2 hrs)  
+  Theory: StatQuest (free).  
+  Practice: Titanic.
+- **Day 39:** Decision Trees. (1.2-2 hrs)  
+  Theory: DataCamp Tree-Based Models Ch1 + Kaggle (free).  
+  Practice: Build.
+- **Day 40:** Project: House prices Kaggle. (2-2.5 hrs)  
+  Practice: Submit. Research: Compare baselines.
 
-### Days 41-50: Ensemble Methods
-- **Day 41:** Bagging, Random Forests.  
-  Theory: StatQuest Random Forest.  
-  Practice: RF on Iris.
-- **Day 42:** Boosting (AdaBoost).  
-  Theory: [StatQuest AdaBoost](https://www.youtube.com/watch?v=mlGh5aN8mlw).  
-  Practice: Sklearn AdaBoost.
-- **Day 43:** Gradient Boosting (XGBoost).  
-  Theory: [XGBoost Tutorial](https://xgboost.readthedocs.io/en/stable/tutorials/model.html).  
-  Practice: Train XGBoost.
-- **Day 44:** Hyperparameter tuning (GridSearch).  
-  Theory: Kaggle course.  
-  Practice: Tune RF.
-- **Day 45:** Feature engineering.  
-  Theory: [Kaggle Feature Engineering](https://www.kaggle.com/learn/feature-engineering).  
-  Practice: Create features.
-- **Day 46:** Imbalanced data.  
-  Theory: [Imbalanced-learn](https://imbalanced-learn.org/stable/).  
+### Days 41-50: Ensembles
+- **Day 41:** Bagging, RF. (1-2 hrs)  
+  Theory: DataCamp Tree-Based Models Ch2.  
+  Practice: RF Iris.
+- **Day 42:** AdaBoost. (1.2-2 hrs)  
+  Theory: DataCamp Tree-Based Models Ch3.  
+  Practice: Implement.
+- **Day 43:** XGBoost. (1.5-2.5 hrs)  
+  Theory: [DataCamp: XGBoost](https://www.datacamp.com/courses/extreme-gradient-boosting-with-xgboost).  
+  Practice: Train.
+- **Day 44:** Tuning. (1-2 hrs)  
+  Theory: DataCamp scikit-learn Ch4.  
+  Practice: GridSearch.
+- **Day 45:** Feature engineering. (1.2-2 hrs)  
+  Theory: [DataCamp: Feature Engineering](https://www.datacamp.com/courses/feature-engineering-for-machine-learning-in-python).  
+  Practice: Create features. Note: Importance in research.
+- **Day 46:** Imbalanced. (1-2 hrs)  
+  Theory: Imbalanced-learn (free docs).  
   Practice: SMOTE.
-- **Day 47:** PCA.  
-  Theory: StatQuest PCA.  
-  Practice: Apply PCA.
-- **Day 48:** t-SNE visualization.  
-  Theory: [t-SNE Tutorial](https://distill.pub/2016/misread-tsne/).  
-  Practice: Visualize MNIST.
-- **Day 49:** Review ensembles.  
-  Practice: Compare models.
-- **Day 50:** Project: Titanic Kaggle competition.
+- **Day 47:** PCA. (1.5-2.5 hrs)  
+  Theory: DataCamp Dimensionality Reduction Ch1.  
+  Practice: Apply.
+- **Day 48:** t-SNE. (1-2 hrs)  
+  Theory: Distill pub (free).  
+  Practice: Visualize.
+- **Day 49:** Review. (1.2-2 hrs)  
+  Practice: Model comparison.
+- **Day 50:** Project: Titanic. (2-2.5 hrs)  
+  Practice: Compete. Research: Ablation studies.
 
-### Days 51-60: Data Preprocessing & Ethics
-- **Day 51:** Scaling, normalization.  
-  Theory: Ng Week 5.  
-  Practice: StandardScaler.
-- **Day 52:** Encoding categoricals.  
-  Theory: Kaggle Pandas.  
-  Practice: Process text.
-- **Day 53:** Outliers.  
-  Theory: [Outlier Detection](https://towardsdatascience.com/outlier-detection-with-python-6b77e92c1a5a).  
-  Practice: IQR method.
-- **Day 54:** Pipelines (sklearn).  
-  Theory: [Sklearn Pipeline](https://scikit-learn.org/stable/modules/compose.html).  
-  Practice: Build pipeline.
-- **Day 55:** ML Ethics (bias, fairness).  
-  Theory: [Google ML Crash Course Ethics](https://developers.google.com/machine-learning/crash-course/fairness).  
-  Practice: Audit model.
-- **Day 56:** Responsible AI.  
-  Theory: [fast.ai Ethics](https://course.fast.ai/Lessons/lesson5.html).  
-  Practice: Case study.
-- **Day 57:** Git version control.  
-  Theory: [GitHub Guides](https://guides.github.com/activities/hello-world/).  
-  Practice: Commit repo.
-- **Day 58:** Jupyter best practices.  
-  Theory: [Jupyter Tutorial](https://jupyter.org/).  
-  Practice: Organize notebooks.
-- **Day 59:** Review preprocessing.  
-  Practice: Clean dataset.
-- **Day 60:** Project: Full ML pipeline (Kaggle dataset). Deploy with Streamlit (like your FormVibe project).
+### Days 51-60: Preprocessing & Ethics
+- **Day 51:** Scaling. (1-2 hrs)  
+  Theory: DataCamp scikit-learn Ch2.  
+  Practice: Scaler.
+- **Day 52:** Encoding. (1.2-2 hrs)  
+  Theory: DataCamp Pandas Ch3.  
+  Practice: Text.
+- **Day 53:** Outliers. (1.5-2.5 hrs)  
+  Theory: [DataCamp: Data Cleaning](https://www.datacamp.com/courses/cleaning-data-in-python).  
+  Practice: IQR.
+- **Day 54:** Pipelines. (1-2 hrs)  
+  Theory: DataCamp Intermediate ML Ch3.  
+  Practice: Build.
+- **Day 55:** Ethics (bias). (1.2-2 hrs)  
+  Theory: Google Crash Course (free).  
+  Practice: Audit. Note: Ethical research in ML.
+- **Day 56:** Responsible AI. (1-2 hrs)  
+  Theory: fast.ai Ethics (free).  
+  Practice: Case.
+- **Day 57:** Git. (1.5-2.5 hrs)  
+  Theory: [DataCamp: Intro Git](https://www.datacamp.com/courses/introduction-to-git).  
+  Practice: Commit/pull/push.
+- **Day 58:** Jupyter. (1-2 hrs)  
+  Theory: Jupyter (free).  
+  Practice: Organize. Note: Reproducible notebooks for research.
+- **Day 59:** Review. (1.2-2 hrs)  
+  Practice: Clean data.
+- **Day 60:** Project: Pipeline deployment. (2-2.5 hrs)  
+  Practice: Streamlit. Research: Versioning for experiments.
 
-## Phase 3: Supervised Learning Deep Dive (Days 61-100)
-Advanced supervised techniques.
+## Phase 3: Supervised Deep Dive (Days 61-100)
+Integrate paper abstracts for research exposure.
 
 ### Days 61-70: SVM & KNN
-- **Day 61:** KNN algorithm.  
-  Theory: StatQuest KNN.  
-  Practice: Implement from scratch.
-- **Day 62:** Distance metrics.  
-  Theory: Ng Week 6.  
-  Practice: Sklearn KNN.
-- **Day 63:** SVM (linear).  
-  Theory: [StatQuest SVM](https://www.youtube.com/watch?v=efR1C6CvhmE).  
-  Practice: SVM on Iris.
-- **Day 64:** Kernel trick (RBF).  
-  Theory: StatQuest Kernel.  
-  Practice: Non-linear SVM.
-- **Day 65:** SVM tuning.  
-  Theory: Sklearn docs.  
-  Practice: Grid search.
-- **Day 66:** Naive Bayes.  
-  Theory: StatQuest Bayes.  
-  Practice: Text classification.
-- **Day 67:** Compare classifiers.  
-  Practice: ROC curves.
-- **Day 68:** Time series (ARIMA).  
-  Theory: [Statsmodels](https://www.statsmodels.org/stable/index.html).  
-  Practice: Forecast stocks (yfinance).
-- **Day 69:** Review.  
-  Practice: Multi-class project.
-- **Day 70:** Project: SVM for MNIST.
+- **Day 61:** KNN. (1-2 hrs)  
+  Theory: DataCamp scikit-learn Ch3.  
+  Practice: Scratch impl.
+- **Day 62:** Metrics. (1.2-2 hrs)  
+  Theory: DataCamp.  
+  Practice: KNN.
+- **Day 63:** SVM linear. (1.5-2.5 hrs)  
+  Theory: [DataCamp: SVM](https://www.datacamp.com/courses/support-vector-machines-in-python) Ch1.  
+  Practice: Iris.
+- **Day 64:** Kernel. (1-2 hrs)  
+  Theory: DataCamp SVM Ch2.  
+  Practice: Non-linear.
+- **Day 65:** Tuning. (1.2-2 hrs)  
+  Theory: DataCamp SVM Ch3.  
+  Practice: Search.
+- **Day 66:** Bayes. (1-2 hrs)  
+  Theory: DataCamp Supervised.  
+  Practice: Text. Abstract: Skim Bayes theorem paper.
+- **Day 67:** Compare. (1.5-2.5 hrs)  
+  Practice: ROC.
+- **Day 68:** Time series. (1-2 hrs)  
+  Theory: [DataCamp: Time Series](https://www.datacamp.com/courses/time-series-analysis-in-python).  
+  Practice: Forecast.
+- **Day 69:** Review. (1.2-2 hrs)  
+  Practice: Project.
+- **Day 70:** Project: MNIST SVM. (2-2.5 hrs)  
+  Practice: Implement. Research: Compare with paper baselines.
 
-### Days 71-80: Neural Networks Intro
-- **Day 71:** Perceptrons, activations.  
-  Theory: [3B1B Neural Networks](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi).  
-  Practice: Neuron in NumPy.
-- **Day 72:** Feedforward networks.  
-  Theory: 3B1B Ep2-3.  
-  Practice: MLP in PyTorch.
-- **Day 73:** Backpropagation.  
-  Theory: [Neural Networks from Scratch (Ch1-2)](https://Neuralnetworksanddeeplearning.com/).  
-  Practice: Implement backprop.
-- **Day 74:** Loss functions.  
-  Theory: StatQuest Loss.  
-  Practice: Compute losses.
-- **Day 75:** Optimizers (SGD, Adam).  
-  Theory: [Dive into Deep Learning (Ch3)](https://d2l.ai/).  
-  Practice: Train NN.
-- **Day 76:** PyTorch basics.  
-  Theory: [PyTorch Tutorials](https://pytorch.org/tutorials/).  
-  Practice: Tensors, autograd.
-- **Day 77:** Dropout.  
-  Theory: fast.ai Lesson 2.  
-  Practice: Add dropout.
-- **Day 78:** Batch normalization.  
-  Theory: StatQuest Batch Norm.  
-  Practice: Implement.
-- **Day 79:** Review NNs.  
+### Days 71-80: Neural Nets Intro
+- **Day 71:** Perceptrons. (1-2 hrs)  
+  Theory: 3B1B (free).  
+  Practice: NumPy neuron.
+- **Day 72:** Feedforward. (1.2-2 hrs)  
+  Theory: [DataCamp: Deep Learning Python](https://www.datacamp.com/courses/introduction-to-deep-learning-in-python) Ch1.  
+  Practice: MLP.
+- **Day 73:** Backprop. (1.5-2.5 hrs)  
+  Theory: DataCamp Deep Learning Ch2.  
+  Practice: Impl.
+- **Day 74:** Losses. (1-2 hrs)  
+  Theory: DataCamp Deep Learning Ch3.  
+  Practice: Compute.
+- **Day 75:** Optimizers. (1.2-2 hrs)  
+  Theory: D2L (free).  
+  Practice: Train.
+- **Day 76:** PyTorch. (1-2 hrs)  
+  Theory: [DataCamp: PyTorch Intro](https://www.datacamp.com/courses/introduction-to-deep-learning-with-pytorch).  
+  Practice: Tensors.
+- **Day 77:** Dropout. (1.5-2.5 hrs)  
+  Theory: fast.ai (free).  
+  Practice: Add.
+- **Day 78:** Batch norm. (1-2 hrs)  
+  Theory: StatQuest (free).  
+  Practice: Impl. Abstract: Skim dropout paper.
+- **Day 79:** Review. (1.2-2 hrs)  
   Practice: Fashion-MNIST.
-- **Day 80:** Project: NN for digit recognition.
+- **Day 80:** Project: Digit NN. (2-2.5 hrs)  
+  Practice: Build. Research: Reproduce simple NN experiment.
 
 ### Days 81-90: Advanced Supervised
-- **Day 81:** SVR.  
-  Theory: Sklearn docs.  
-  Practice: SVR on housing.
-- **Day 82:** Gaussian Processes.  
-  Theory: [Gaussian Processes (Ch1)](http://www.gaussianprocess.org/gpml/).  
-  Practice: Sklearn GPR.
-- **Day 83:** Stacking.  
-  Theory: Kaggle advanced.  
-  Practice: Stack models.
-- **Day 84:** Explainable AI (SHAP).  
-  Theory: [SHAP Tutorial](https://shap.readthedocs.io/en/latest/example_notebooks/overviews/An%20introduction%20to%20explainable%20AI%20with%20Shapley%20values.html).  
-  Practice: Explain RF.
-- **Day 85:** Transfer learning.  
-  Theory: fast.ai Lesson 4.  
-  Practice: Pre-trained model.
-- **Day 86:** Large datasets (Dask).  
-  Theory: Dask intro.  
-  Practice: Scale EDA.
-- **Day 87:** Deployment (Flask/Streamlit).  
-  Theory: [Streamlit Tutorial](https://docs.streamlit.io/).  
-  Practice: Deploy model.
-- **Day 88:** Review.  
-  Practice: Tune with Optuna.
-- **Day 89:** Ethics: Bias.  
-  Theory: fast.ai Ethics.
-- **Day 90:** Project: End-to-end supervised pipeline.
+- **Day 81:** SVR. (1-2 hrs)  
+  Theory: Sklearn docs (free).  
+  Practice: Housing.
+- **Day 82:** Gaussian Processes. (1.2-2 hrs)  
+  Theory: Gaussian Processes book Ch1 (free).  
+  Practice: GPR.
+- **Day 83:** Stacking. (1.5-2.5 hrs)  
+  Theory: Kaggle (free).  
+  Practice: Stack.
+- **Day 84:** SHAP. (1-2 hrs)  
+  Theory: SHAP tutorial (free).  
+  Practice: Explain. Note: Interpretability in research.
+- **Day 85:** Transfer learning. (1.2-2 hrs)  
+  Theory: fast.ai (free).  
+  Practice: Pre-trained.
+- **Day 86:** Large data. (1-2 hrs)  
+  Theory: Dask (free).  
+  Practice: EDA scale.
+- **Day 87:** Deployment. (1.5-2.5 hrs)  
+  Theory: Streamlit (free).  
+  Practice: Deploy.
+- **Day 88:** Review. (1-2 hrs)  
+  Practice: Optuna tune.
+- **Day 89:** Ethics deep. (1.2-2 hrs)  
+  Theory: fast.ai. Note: Research ethics (e.g., bias in papers).
+- **Day 90:** Project: Pipeline. (2-2.5 hrs)  
+  Practice: End-to-end. Research: Document experiment.
 
-### Days 91-100: Intro to Research
-- **Day 91:** Reading papers.  
-  Theory: [How to Read a Paper](https://ccr.sigcomm.org/online/files/p83-keshavA.pdf).  
+### Days 91-100: Research Intro
+- **Day 91:** Reading papers. (1-2 hrs)  
+  Theory: [How to Read Paper (free PDF)](https://ccr.sigcomm.org/online/files/p83-keshavA.pdf).  
   Practice: Skim ML paper.
-- **Day 92:** "A Few Useful Things" (Domingos, 2012).  
-  Read: [arXiv](https://arxiv.org/abs/1206.5538).  
+- **Day 92:** "Few Useful Things" (Domingos). (1.2-2 hrs)  
+  Read: arXiv (free).  
   Practice: Apply tip.
-- **Day 93:** "Support-Vector Networks" (Cortes, 1995).  
-  Read: [PDF](https://www.csie.ntu.edu.tw/~cjlin/papers/libsvm.pdf).  
-  Practice: Reimplement SVM.
-- **Day 94:** "Random Forests" (Breiman, 2001).  
-  Read: [PDF](https://link.springer.com/content/pdf/10.1023/A:1010933404324.pdf).  
-  Practice: Compare sklearn.
-- **Day 95:** "Gradient Boosting" (Friedman, 2001).  
-  Read: [PDF](https://statweb.stanford.edu/~jhf/ftp/trebst.pdf).  
-  Practice: Tweak XGBoost.
-- **Day 96:** Paper discussion: r/MachineLearning.  
-  Practice: Summarize paper.
-- **Day 97:** Zotero for papers.  
-  Practice: Organize 5 papers.
-- **Day 98:** Reproducibility.  
-  Theory: [Papers with Code](https://paperswithcode.com/).  
-  Practice: Run paper code.
-- **Day 99:** Review.  
-  Practice: Update portfolio.
-- **Day 100:** Project: Reproduce paper (e.g., RF on UCI).
+- **Day 93:** SVM paper. (1.5-2.5 hrs)  
+  Read: PDF (free).  
+  Practice: Reimpl.
+- **Day 94:** RF paper. (1-2 hrs)  
+  Read: PDF.  
+  Practice: Compare.
+- **Day 95:** GBM paper. (1.2-2 hrs)  
+  Read: PDF.  
+  Practice: Tweak.
+- **Day 96:** Discussion. (1-2 hrs)  
+  Practice: Reddit summary. Note: Peer review in research.
+- **Day 97:** Zotero (free). (1.5-2.5 hrs)  
+  Practice: Organize papers.
+- **Day 98:** Reproducibility. (1-2 hrs)  
+  Theory: Papers with Code (free).  
+  Practice: Run code.
+- **Day 99:** Review. (1.2-2 hrs)  
+  Practice: Portfolio.
+- **Day 100:** Project: Reproduce paper. (2-2.5 hrs)  
+  Practice: UCI RF. Research journal entry.
 
-## Phase 4: Unsupervised Learning (Days 101-140)
-Clustering, dimensionality reduction.
+## Phase 4: Unsupervised (Days 101-140)
+Research focus: Unsupervised in generative models/research.
 
 ### Days 101-110: Clustering
-- **Day 101:** K-Means.  
-  Theory: StatQuest K-Means.  
-  Practice: Cluster Iris.
-- **Day 102:** Elbow method, silhouette.  
-  Theory: Sklearn clustering.  
-  Practice: Tune K.
-- **Day 103:** Hierarchical clustering.  
-  Theory: [StatQuest Hierarchical](https://www.youtube.com/watch?v=Wjqt2r8gRbY).  
+- **Day 101:** K-Means. (1-2 hrs)  
+  Theory: StatQuest (free).  
+  Practice: Iris.
+- **Day 102:** Elbow, silhouette. (1.2-2 hrs)  
+  Theory: Sklearn (free).  
+  Practice: Tune.
+- **Day 103:** Hierarchical. (1.5-2.5 hrs)  
+  Theory: StatQuest.  
   Practice: Dendrogram.
-- **Day 104:** DBSCAN.  
-  Theory: StatQuest DBSCAN.  
-  Practice: Noise handling.
-- **Day 105:** GMM.  
-  Theory: [Sklearn GMM](https://scikit-learn.org/stable/modules/mixture.html).  
-  Practice: Soft clustering.
-- **Day 106:** Clustering evaluation.  
-  Theory: Adjusted Rand Index.  
-  Practice: Compare algos.
-- **Day 107:** Customer segmentation.  
-  Practice: Kaggle retail dataset.
-- **Day 108:** Anomaly detection (Isolation Forest).  
-  Theory: StatQuest Isolation Forest.  
-  Practice: Detect outliers.
-- **Day 109:** Review.  
-  Practice: Cluster text (TF-IDF).
-- **Day 110:** Project: Cluster news articles (NLTK).
+- **Day 104:** DBSCAN. (1-2 hrs)  
+  Theory: StatQuest.  
+  Practice: Noise.
+- **Day 105:** GMM. (1.2-2 hrs)  
+  Theory: Sklearn.  
+  Practice: Clustering.
+- **Day 106:** Evaluation. (1-2 hrs)  
+  Theory: Rand Index.  
+  Practice: Compare.
+- **Day 107:** Segmentation. (1.5-2.5 hrs)  
+  Practice: Retail Kaggle.
+- **Day 108:** Anomaly (Forest). (1-2 hrs)  
+  Theory: StatQuest.  
+  Practice: Detect.
+- **Day 109:** Review. (1.2-2 hrs)  
+  Practice: Text cluster.
+- **Day 110:** Project: News cluster. (2-2.5 hrs)  
+  Practice: NLTK (free). Research: Clustering in papers.
 
-### Days 111-120: Dimensionality Reduction
-- **Day 111:** PCA deep dive.  
-  Theory: 3B1B PCA.  
+### Days 111-120: Reduction & Recs
+- **Day 111:** PCA. (1-2 hrs)  
+  Theory: 3B1B.  
   Practice: Eigenfaces.
-- **Day 112:** ICA.  
-  Theory: [Sklearn ICA](https://scikit-learn.org/stable/modules/decomposition.html#independent-components-analysis-ica).  
-  Practice: Audio separation.
-- **Day 113:** Autoencoders.  
-  Theory: [PyTorch Autoencoder](https://pytorch.org/tutorials/beginner/basics/autoencoder.html).  
-  Practice: Denoise images.
-- **Day 114:** t-SNE/UMAP.  
-  Theory: [UMAP Tutorial](https://umap-learn.readthedocs.io/en/latest/basic_usage.html).  
-  Practice: Visualize data.
-- **Day 115:** Manifold learning.  
-  Theory: Sklearn manifold.  
+- **Day 112:** ICA. (1.2-2 hrs)  
+  Theory: Sklearn.  
+  Practice: Audio.
+- **Day 113:** Autoencoders. (1.5-2.5 hrs)  
+  Theory: PyTorch tutorial (free).  
+  Practice: Denoise.
+- **Day 114:** UMAP/t-SNE. (1-2 hrs)  
+  Theory: UMAP docs (free).  
+  Practice: Viz.
+- **Day 115:** Manifold. (1.2-2 hrs)  
+  Theory: Sklearn.  
   Practice: Isomap.
-- **Day 116:** Association rules (Apriori).  
-  Theory: [MLxtend](http://rasbt.github.io/mlxtend/user_guide/frequent_patterns/apriori/).  
-  Practice: Market basket.
-- **Day 117:** Recommender systems.  
-  Theory: [Surprise Library](https://surpriselib.com/).  
+- **Day 116:** Apriori. (1-2 hrs)  
+  Theory: MLxtend (free).  
+  Practice: Basket.
+- **Day 117:** Collaborative recs. (1.5-2.5 hrs)  
+  Theory: Surprise (free).  
   Practice: MovieLens.
-- **Day 118:** Content-based recs.  
-  Practice: TF-IDF + cosine.
-- **Day 119:** Review.  
-  Practice: Full pipeline.
-- **Day 120:** Project: Book recommender (Kaggle).
+- **Day 118:** Content-based. (1-2 hrs)  
+  Practice: TF-IDF.
+- **Day 119:** Review. (1.2-2 hrs)  
+  Practice: Pipeline.
+- **Day 120:** Project: Book recs. (2-2.5 hrs)  
+  Practice: Kaggle. Research: Rec systems papers.
 
-### Days 121-130: Reinforcement Learning
-- **Day 121:** RL basics.  
-  Theory: [Sutton & Barto (Ch1-2)](http://incompleteideas.net/book/the-book-2nd.html).  
-  Practice: Gymnasium.
-- **Day 122:** MDPs.  
+### Days 121-130: RL Intro
+- **Day 121:** Basics. (1-2 hrs)  
+  Theory: Sutton book Ch1-2 (free PDF).  
+  Practice: Gym.
+- **Day 122:** MDPs. (1.2-2 hrs)  
   Theory: Ch3.  
-  Practice: MDP simulation.
-- **Day 123:** Q-Learning.  
-  Theory: [David Silver RL (Lec1-2)](https://www.youtube.com/playlist?list=PLqYmG7hTraZDM-OYHWgPebj2MfCFzFObQ).  
+  Practice: Sim.
+- **Day 123:** Q-Learning. (1.5-2.5 hrs)  
+  Theory: Silver Lec1-2 (free YouTube).  
   Practice: FrozenLake.
-- **Day 124:** Policy gradients.  
+- **Day 124:** Policy gradients. (1-2 hrs)  
   Theory: Lec3.  
   Practice: CartPole.
-- **Day 125:** DQN.  
-  Theory: [Atari Paper](https://www.nature.com/articles/nature14236) (abstract).  
-  Practice: Stable-Baselines3.
-- **Day 126:** Actor-Critic.  
+- **Day 125:** DQN. (1.2-2 hrs)  
+  Theory: Atari paper abstract.  
+  Practice: Baselines3 (free).
+- **Day 126:** Actor-Critic. (1-2 hrs)  
   Theory: Lec4.  
   Practice: A2C.
-- **Day 127:** Multi-armed bandits.  
-  Theory: [Bandits](https://lilianweng.github.io/posts/2018-04-08-policy-gradient/).  
-  Practice: Epsilon-greedy.
-- **Day 128:** RL applications.  
-  Practice: Train game agent.
-- **Day 129:** Review RL.  
-  Practice: Compare algos.
-- **Day 130:** Project: RL for Tic-Tac-Toe.
+- **Day 127:** Bandits. (1.5-2.5 hrs)  
+  Theory: Weng blog (free).  
+  Practice: Epsilon.
+- **Day 128:** Apps. (1-2 hrs)  
+  Practice: Game agent.
+- **Day 129:** Review. (1.2-2 hrs)  
+  Practice: Algos compare.
+- **Day 130:** Project: Tic-Tac-Toe RL. (2-2.5 hrs)  
+  Practice: Impl. Research: RL in games papers.
 
 ### Days 131-140: Unsupervised Research
-- **Day 131:** "Kalman Filter" (Welch, 1995).  
-  Read: [PDF](https://www.cs.unc.edu/~welch/media/pdf/kalman_intro.pdf).  
-  Practice: Implement filter.
-- **Day 132:** "DBSCAN" (Ester, 1996).  
-  Read: [PDF](https://www.aaai.org/Papers/KDD/1996/KDD96-037.pdf).  
+- **Day 131:** Kalman Filter paper. (1-2 hrs)  
+  Read: PDF.  
+  Practice: Impl.
+- **Day 132:** DBSCAN paper. (1.2-2 hrs)  
+  Read: PDF.  
   Practice: Reproduce.
-- **Day 133:** "Auto-Encoding VAEs" (Kingma, 2013).  
-  Read: [arXiv](https://arxiv.org/abs/1312.6114).  
+- **Day 133:** VAE paper. (1.5-2.5 hrs)  
+  Read: arXiv.  
   Practice: PyTorch VAE.
-- **Day 134:** "UMAP" (McInnes, 2018).  
-  Read: [arXiv](https://arxiv.org/abs/1802.03426).  
-  Practice: Compare t-SNE.
-- **Day 135:** "Matrix Factorization" (Koren, 2009).  
-  Read: [PDF](https://datajobs.com/data-science-repo/Recommender-Systems-[Netflix].pdf).  
-  Practice: SVD recs.
-- **Day 136:** "Atari DQN" (Mnih, 2013).  
-  Read: [arXiv](https://arxiv.org/abs/1312.5602).  
-  Practice: DQN code.
-- **Day 137:** Summarize papers.  
-  Practice: Blog post (use React-based blog like FormVibe).
-- **Day 138:** Reproducibility.  
+- **Day 134:** UMAP paper. (1-2 hrs)  
+  Read: arXiv.  
+  Practice: Compare.
+- **Day 135:** Matrix Factor paper. (1.2-2 hrs)  
+  Read: PDF.  
+  Practice: SVD.
+- **Day 136:** Atari DQN paper. (1-2 hrs)  
+  Read: arXiv.  
+  Practice: Code.
+- **Day 137:** Summarize. (1.5-2.5 hrs)  
+  Practice: Markdown blog. Note: Writing for research.
+- **Day 138:** Repro challenge. (1-2 hrs)  
   Practice: Papers with Code.
-- **Day 139:** Review.  
-  Practice: Unsupervised pipeline.
-- **Day 140:** Project: Anomaly detection with paper impl.
+- **Day 139:** Review. (1.2-2 hrs)  
+  Practice: Pipeline.
+- **Day 140:** Project: Anomaly with paper. (2-2.5 hrs)  
+  Practice: Impl. Critique paper.
 
 ## Phase 5: Deep Learning (Days 141-170)
-CNNs, RNNs, Transformers.
+Research: DL papers, reproductions.
 
 ### Days 141-150: CNNs
-- **Day 141:** Convolution, pooling.  
-  Theory: [CS231n (Lec5)](https://www.youtube.com/playlist?list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv).  
-  Practice: Conv layer (PyTorch).
-- **Day 142:** CNN architectures (LeNet).  
-  Theory: CS231n Lec6.  
-  Practice: MNIST CNN.
-- **Day 143:** Transfer learning (ResNet).  
-  Theory: fast.ai Lesson 1.  
-  Practice: Fine-tune CIFAR-10.
-- **Day 144:** Object detection (YOLO).  
-  Theory: [Ultralytics YOLO](https://docs.ultralytics.com/).  
-  Practice: Detect objects.
-- **Day 145:** Segmentation (U-Net).  
-  Theory: [U-Net Paper](https://arxiv.org/abs/1505.04597) (abstract).  
-  Practice: Seg model.
-- **Day 146:** GANs.  
-  Theory: [GANs from Scratch](https://github.com/jeffheaton/ganjs).  
-  Practice: DCGAN on MNIST.
-- **Day 147:** Conditional GANs.  
-  Practice: Generate labeled images.
-- **Day 148:** Style transfer.  
-  Theory: [TensorFlow Hub](https://www.tensorflow.org/hub/tutorials/tf2_arbitrary_image_stylization).  
-  Practice: Apply style.
-- **Day 149:** Review CNNs.  
-  Practice: Kaggle image comp.
-- **Day 150:** Project: Cat/dog classifier.
+- **Day 141:** Conv, pooling. (1-2 hrs)  
+  Theory: CS231n Lec5 (free).  
+  Practice: PyTorch conv.
+- **Day 142:** LeNet. (1.2-2 hrs)  
+  Theory: Lec6.  
+  Practice: MNIST.
+- **Day 143:** ResNet transfer. (1.5-2.5 hrs)  
+  Theory: fast.ai.  
+  Practice: CIFAR.
+- **Day 144:** YOLO. (1-2 hrs)  
+  Theory: Ultralytics (free).  
+  Practice: Detect.
+- **Day 145:** U-Net. (1.2-2 hrs)  
+  Theory: Paper abstract.  
+  Practice: Seg.
+- **Day 146:** GANs. (1-2 hrs)  
+  Theory: Scratch book (free).  
+  Practice: DCGAN.
+- **Day 147:** Conditional GANs. (1.5-2.5 hrs)  
+  Practice: Labeled gen.
+- **Day 148:** Style transfer. (1-2 hrs)  
+  Theory: TF Hub (free).  
+  Practice: Apply.
+- **Day 149:** Review. (1.2-2 hrs)  
+  Practice: Image comp.
+- **Day 150:** Project: Cat/dog CNN. (2-2.5 hrs)  
+  Practice: Build. Reproduce AlexNet abstract.
 
 ### Days 151-160: RNNs & Sequences
-- **Day 151:** Embeddings.  
-  Theory: [Colah’s LSTM](http://colah.github.io/posts/2015-08-Understanding-LSTMs/).  
-  Practice: Gensim embeddings.
-- **Day 152:** Vanilla RNN.  
+- **Day 151:** Embeddings. (1-2 hrs)  
+  Theory: Colah LSTM (free).  
+  Practice: Gensim.
+- **Day 152:** Vanilla RNN. (1.2-2 hrs)  
   Theory: CS231n Lec10.  
-  Practice: Char RNN.
-- **Day 153:** LSTMs/GRUs.  
-  Theory: StatQuest LSTM.  
-  Practice: Sentiment analysis.
-- **Day 154:** Seq2Seq.  
-  Theory: [Seq2Seq Tutorial](https://pytorch.org/tutorials/intermediate/seq2seq_translation_tutorial.html).  
+  Practice: Char.
+- **Day 153:** LSTM/GRU. (1.5-2.5 hrs)  
+  Theory: StatQuest.  
+  Practice: Sentiment.
+- **Day 154:** Seq2Seq. (1-2 hrs)  
+  Theory: PyTorch tut (free).  
   Practice: Translation.
-- **Day 155:** Attention.  
-  Theory: [Attention Paper](https://arxiv.org/abs/1706.03762) (abstract).  
-  Practice: Add attention.
-- **Day 156:** Transformers.  
-  Theory: [Annotated Transformer](https://nlp.seas.harvard.edu/2018/04/03/attention.html).  
+- **Day 155:** Attention. (1.2-2 hrs)  
+  Theory: Paper abstract.  
+  Practice: Add.
+- **Day 156:** Transformers. (1-2 hrs)  
+  Theory: Annotated (free).  
   Practice: Hugging Face.
-- **Day 157:** BERT.  
-  Theory: [Hugging Face Course](https://huggingface.co/course/chapter1).  
-  Practice: Fine-tune BERT.
-- **Day 158:** LSTM for time series.  
-  Practice: Stock prediction.
-- **Day 159:** Review.  
-  Practice: IMDB NLP task.
-- **Day 160:** Project: Chatbot with seq2seq.
+- **Day 157:** BERT. (1.5-2.5 hrs)  
+  Theory: [Hugging Face Course (free)](https://huggingface.co/course).  
+  Practice: Fine-tune.
+- **Day 158:** LSTM time series. (1-2 hrs)  
+  Practice: Stocks.
+- **Day 159:** Review. (1.2-2 hrs)  
+  Practice: IMDB.
+- **Day 160:** Project: Chatbot. (2-2.5 hrs)  
+  Practice: Seq2Seq. Research: Critique Transformer paper.
 
 ### Days 161-170: DL Advanced
-- **Day 161:** Optimizers (AdamW).  
-  Theory: D2L Ch11.  
-  Practice: Compare convergence.
-- **Day 162:** LR scheduling.  
+- **Day 161:** AdamW. (1-2 hrs)  
+  Theory: D2L.  
+  Practice: Compare.
+- **Day 162:** LR sched. (1.2-2 hrs)  
   Theory: fast.ai.  
-  Practice: Cosine annealing.
-- **Day 163:** Data augmentation.  
-  Theory: [Albumentations](https://albumentations.ai/).  
-  Practice: Augment images.
-- **Day 164:** Pruning/quantization.  
-  Theory: [Torch Pruning](https://pytorch.org/tutorials/recipes/pruning.html).  
-  Practice: Compress model.
-- **Day 165:** Federated Learning.  
-  Theory: [Flower](https://flower.dev/).  
-  Practice: Federated avg.
-- **Day 166:** TabNet.  
-  Theory: [TabNet Paper](https://arxiv.org/abs/1908.07442).  
-  Practice: Implement.
-- **Day 167:** Multimodal (CLIP).  
-  Theory: [CLIP Paper](https://arxiv.org/abs/2103.00020).  
-  Practice: Hugging Face.
-- **Day 168:** Review DL.  
-  Practice: Ensemble DL.
-- **Day 169:** Deployment: TorchServe.  
-  Theory: [PyTorch Serve](https://pytorch.org/serve/).  
-  Practice: Serve model.
-- **Day 170:** Project: Image captioning app.
+  Practice: Annealing.
+- **Day 163:** Augmentation. (1.5-2.5 hrs)  
+  Theory: Albumentations (free).  
+  Practice: Images.
+- **Day 164:** Pruning. (1-2 hrs)  
+  Theory: Torch tut (free).  
+  Practice: Compress.
+- **Day 165:** Federated. (1.2-2 hrs)  
+  Theory: Flower (free).  
+  Practice: Avg.
+- **Day 166:** TabNet. (1-2 hrs)  
+  Theory: Paper.  
+  Practice: Impl.
+- **Day 167:** CLIP multimodal. (1.5-2.5 hrs)  
+  Theory: Paper.  
+  Practice: HF.
+- **Day 168:** Review. (1-2 hrs)  
+  Practice: Ensemble.
+- **Day 169:** TorchServe deploy. (1.2-2 hrs)  
+  Theory: Docs (free).  
+  Practice: Serve.
+- **Day 170:** Project: Captioning. (2-2.5 hrs)  
+  Practice: App. Research: Design experiment variant.
 
-## Phase 6: Advanced Topics & Research (Days 171-200)
-Cutting-edge, papers, projects.
+## Phase 6: Advanced & Research (Days 171-200)
+Heavy on research: Methods, publishing, proposal.
 
-### Days 171-180: Generative Models
-- **Day 171:** Diffusion Models.  
-  Theory: [Hugging Face Diffusion](https://huggingface.co/docs/diffusers/index).  
-  Practice: Generate images.
-- **Day 172:** Normalizing Flows.  
-  Theory: [Pyro Flows](https://pyro.ai/examples/normalizing_flows_i.html).  
-  Practice: Pyro.
-- **Day 173:** GNNs.  
-  Theory: [PyG Tutorial](https://pytorch-geometric.readthedocs.io/en/latest/get_started/introduction.html).  
-  Practice: Node classification.
-- **Day 174:** Causal Inference.  
-  Theory: [CausalML](https://github.com/uber/causalml).  
-  Practice: Uplift modeling.
-- **Day 175:** Bayesian ML.  
-  Theory: [PyMC](https://www.pymc.io/welcome.html).  
-  Practice: Bayesian regression.
-- **Day 176:** AutoML (TPOT).  
-  Theory: [TPOT Docs](http://epistasislab.github.io/tpot/).  
-  Practice: Automate pipeline.
-- **Day 177:** MLOps (MLflow).  
-  Theory: [MLflow](https://mlflow.org/docs/latest/quickstart.html).  
-  Practice: Track experiments.
-- **Day 178:** Scalable ML (Dask/Ray).  
-  Theory: [Dask ML](https://ml.dask.org/).  
-  Practice: Parallel training.
-- **Day 179:** Review.  
-  Practice: Integrate tools.
-- **Day 180:** Project: Generative model (custom).
+### Days 171-180: Generative & Advanced
+- **Day 171:** Diffusion. (1-2 hrs)  
+  Theory: HF Diffusion (free).  
+  Practice: Gen images.
+- **Day 172:** Flows. (1.2-2 hrs)  
+  Theory: Pyro (free).  
+  Practice: Impl.
+- **Day 173:** GNNs. (1.5-2.5 hrs)  
+  Theory: PyG tut (free).  
+  Practice: Nodes.
+- **Day 174:** Causal. (1-2 hrs)  
+  Theory: CausalML (free).  
+  Practice: Uplift.
+- **Day 175:** Bayesian. (1.2-2 hrs)  
+  Theory: PyMC (free).  
+  Practice: Regression.
+- **Day 176:** AutoML. (1-2 hrs)  
+  Theory: TPOT (free).  
+  Practice: Pipeline.
+- **Day 177:** MLOps. (1.5-2.5 hrs)  
+  Theory: MLflow (free).  
+  Practice: Track. Note: Reproducible research.
+- **Day 178:** Scalable. (1-2 hrs)  
+  Theory: Dask ML (free).  
+  Practice: Parallel.
+- **Day 179:** Review. (1.2-2 hrs)  
+  Practice: Integrate.
+- **Day 180:** Project: Generative custom. (2-2.5 hrs)  
+  Practice: Build. Experiment log.
 
-### Days 181-190: Key Research Papers
-- **Day 181:** "AlexNet" (Krizhevsky, 2012).  
-  Read: [NIPS PDF](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf).  
-  Practice: Reproduce architecture.
-- **Day 182:** "GANs" (Goodfellow, 2014).  
-  Read: [arXiv](https://arxiv.org/abs/1406.2661).  
-  Practice: Basic GAN.
-- **Day 183:** "ResNet" (He, 2016).  
-  Read: [arXiv](https://arxiv.org/abs/1512.03385).  
-  Practice: ResNet block.
-- **Day 184:** "LSTM" (Hochreiter, 1997).  
-  Read: [PDF](https://www.bioinf.jku.at/publications/older/2604.pdf).  
-  Practice: LSTM.
-- **Day 185:** "Attention Is All You Need" (Vaswani, 2017).  
-  Read: [arXiv](https://arxiv.org/abs/1706.03762).  
-  Practice: Transformer.
-- **Day 186:** "BERT" (Devlin, 2018).  
-  Read: [arXiv](https://arxiv.org/abs/1810.04805).  
+### Days 181-190: Key Papers & Critiques
+- **Day 181:** AlexNet. (1-2 hrs)  
+  Read: PDF. Critique: Strengths/weaknesses.  
+  Practice: Reproduce.
+- **Day 182:** GANs. (1.2-2 hrs)  
+  Read: arXiv. Critique.  
+  Practice: Basic.
+- **Day 183:** ResNet. (1.5-2.5 hrs)  
+  Read: arXiv.  
+  Practice: Block.
+- **Day 184:** LSTM. (1-2 hrs)  
+  Read: PDF.  
+  Practice: Impl.
+- **Day 185:** Transformers. (1.2-2 hrs)  
+  Read: arXiv. Critique.  
+  Practice: Decoder.
+- **Day 186:** BERT. (1-2 hrs)  
+  Read: arXiv.  
   Practice: Fine-tune.
-- **Day 187:** "Diffusion Models" (Ho, 2020).  
-  Read: [arXiv](https://arxiv.org/abs/2006.11239).  
-  Practice: Simple diffusion.
-- **Day 188:** "GAT" (Veličković, 2018).  
-  Read: [arXiv](https://arxiv.org/abs/1710.10903).  
-  Practice: GAT layer.
-- **Day 189:** Summarize papers.  
-  Practice: Write reviews (React blog).
-- **Day 190:** Project: Modify paper impl (Transformer).
+- **Day 187:** Diffusion. (1.5-2.5 hrs)  
+  Read: arXiv.  
+  Practice: Simple.
+- **Day 188:** GAT. (1-2 hrs)  
+  Read: arXiv.  
+  Practice: Layer.
+- **Day 189:** Summaries/critiques. (1.2-2 hrs)  
+  Practice: Write (React blog). Note: Peer review simulation.
+- **Day 190:** Project: Modify paper (Transformer). (2-2.5 hrs)  
+  Practice: Variant. Document changes.
 
-### Days 191-200: Capstone & Next Steps
-- **Day 191:** Portfolio (AWS S3 hosting, per your static site interest).  
-  Theory: [GitHub Pages](https://pages.github.com/).  
-  Practice: Showcase projects.
-- **Day 192:** Open-source contribution.  
-  Theory: [First Contributions](https://github.com/firstcontributions/first-contributions).  
-  Practice: Fork repo.
-- **Day 193:** Interview prep.  
-  Theory: [LeetCode ML](https://leetcode.com/tag/machine-learning/).  
-  Practice: Solve 5 problems.
-- **Day 194:** Read NeurIPS/ICML 2024 papers.  
-  Practice: Skim 3 arXiv papers.
-- **Day 195:** Domain-specific ML (NLP/CV).  
-  Practice: Deep dive (e.g., FormVibe analytics).
-- **Day 196:** Research proposal.  
-  Practice: Outline idea.
-- **Day 197:** Networking: LinkedIn (use your post strategy).  
-  Practice: Share project.
-- **Day 198:** Review roadmap.  
-  Practice: Self-assessment.
-- **Day 199:** Future: RL advanced, quantum ML.  
-  Theory: Resource list.
-- **Day 200:** Capstone: End-to-end ML system (React app, AWS deploy) + paper report. Track on GitHub.
+### Days 191-200: Capstone, Research Skills & Future
+- **Day 191:** Portfolio. (1-2 hrs)  
+  Theory: GitHub Pages (free).  
+  Practice: Showcase. Include research notes.
+- **Day 192:** Open-source contrib. (1.2-2 hrs)  
+  Theory: First Contribs (free).  
+  Practice: Fork/PR. Note: Collaborating in research.
+- **Day 193:** Interview prep. (1.5-2.5 hrs)  
+  Theory: LeetCode ML.  
+  Practice: Solve. For research roles.
+- **Day 194:** Recent papers (2025 NeurIPS). (1-2 hrs)  
+  Practice: Skim 3 arXiv. Critique trends.
+- **Day 195:** Domain ML (e.g., NLP/CV for research). (1.2-2 hrs)  
+  Practice: Deep dive. Choose research interest.
+- **Day 196:** Research proposal. (1-2 hrs)  
+  Practice: Outline idea (problem, method, eval).
+- **Day 197:** Networking. (1.5-2.5 hrs)  
+  Practice: LinkedIn post project. Conferences (free streams).
+- **Day 198:** Review roadmap. (1-2 hrs)  
+  Practice: Assessment. Research gaps.
+- **Day 199:** Advanced topics (quantum ML, advanced RL). (1.2-2 hrs)  
+  Theory: Resources. For cutting-edge research.
+- **Day 200:** Capstone: ML system + proposal. (2-2.5 hrs)  
+  Practice: Build/deploy (React/AWS). Write short paper-style report. Publishing basics: arXiv submission, journal tips.
 
-**Congratulations!** You've gone from zero to advanced. Continue with Kaggle or grad school apps. Fork this MDX for your learning tracker website (MERN stack, TypeScript, like your SlotSwapper project). Share progress on LinkedIn for visibility (per your past strategy).
+**Congratulations!** You're research-ready. Next: Apply to ML PhD, contribute to open-source, attend conferences. Fork this MDX for your tracker (MERN, TypeScript). Share on LinkedIn for feedback.
