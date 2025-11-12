@@ -8,6 +8,7 @@
 # print("Hello, World!"
 # This will raise a SyntaxError because the closing parenthesis is missing.
 # To fix it, add the missing parenthesis:
+
 print("Hello, World!")
 # Exceptions
 # An exception is an error that occurs during the execution of the code.
