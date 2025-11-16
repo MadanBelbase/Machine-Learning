@@ -54,4 +54,3 @@ print("Reshaped Array (3x4):\n", reshaped_array)
 flattened_array = reshaped_array.flatten()  # Convert back to 1D array
 print("Flattened Array:", flattened_array)
 
-# Transposing Arrays
