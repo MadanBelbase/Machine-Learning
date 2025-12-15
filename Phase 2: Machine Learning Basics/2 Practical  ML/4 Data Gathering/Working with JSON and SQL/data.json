@@ -1,0 +1,67 @@
+[
+    {
+      "hours_studied": 2,
+      "attendance_percentage": 65,
+      "previous_score": 50,
+      "sleep_hours": 6,
+      "internet_access": 1,
+      "final_score": 55
+    },
+    {
+      "hours_studied": 4,
+      "attendance_percentage": 72,
+      "previous_score": 60,
+      "sleep_hours": 7,
+      "internet_access": 1,
+      "final_score": 65
+    },
+    {
+      "hours_studied": 1,
+      "attendance_percentage": 55,
+      "previous_score": 45,
+      "sleep_hours": 5,
+      "internet_access": 0,
+      "final_score": 48
+    },
+    {
+      "hours_studied": 6,
+      "attendance_percentage": 85,
+      "previous_score": 75,
+      "sleep_hours": 8,
+      "internet_access": 1,
+      "final_score": 82
+    },
+    {
+      "hours_studied": 3,
+      "attendance_percentage": 70,
+      "previous_score": 58,
+      "sleep_hours": 6,
+      "internet_access": 0,
+      "final_score": 60
+    },
+    {
+      "hours_studied": 8,
+      "attendance_percentage": 92,
+      "previous_score": 88,
+      "sleep_hours": 8,
+      "internet_access": 1,
+      "final_score": 90
+    },
+    {
+      "hours_studied": 5,
+      "attendance_percentage": 78,
+      "previous_score": 68,
+      "sleep_hours": 7,
+      "internet_access": 1,
+      "final_score": 72
+    },
+    {
+      "hours_studied": 0,
+      "attendance_percentage": 40,
+      "previous_score": 35,
+      "sleep_hours": 4,
+      "internet_access": 0,
+      "final_score": 38
+    }
+  ]
+  
