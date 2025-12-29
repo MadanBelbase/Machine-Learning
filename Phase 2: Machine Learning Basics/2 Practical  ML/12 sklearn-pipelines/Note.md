@@ -25,8 +25,5 @@ Input → Step 1 → Step 2 → Step 3 → Output
 * Each block represents a transformation or model.
 * Output of one block = input to the next.
 
-## Key Benefits
 
-* Consistent preprocessing for train and test sets
-* Clean, reusable code
-* Easy integration with GridSearchCV and cross-validation
+
