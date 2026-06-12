@@ -1,0 +1,5 @@
+In transformer model, attention is used in both block encoder and decoder and the attention is used in three different ways:
+1. **Self-Attention in Encoder**: Each token in the input sequence attends to all other tokens in the same sequence to capture contextual relationships. This allows the model to understand the dependencies between words regardless of their position in the sentence.
+2. **Self-Attention in Decoder**: Similar to the encoder, each token in the output sequence attends to all other tokens in the same output sequence. This helps the decoder to generate coherent and contextually relevant output by considering previously generated tokens.
+3. **Encoder-Decoder Attention**: In the decoder, each token attends to all tokens in the encoder's output. This allows the decoder to focus on relevant parts of the input sequence when generating each token in the output sequence, enabling effective translation or generation based on the input context.
+ 
