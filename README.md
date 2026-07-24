@@ -1,4 +1,4 @@
-# 🤖 Machine Learning — Complete Learning Repository
+# 🤖 Machine Learning 
 
 A structured, phase-based repository covering everything from Python fundamentals to core Machine Learning concepts, with curated resources and reference images.
 
