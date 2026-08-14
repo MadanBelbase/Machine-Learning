@@ -180,15 +180,5 @@ jupyter notebook
 
 ---
 
-## 📌 Suggested Learning Order
-
-1. ✅ Read `Phase 0` — understand the full roadmap
-2. ✅ Complete `Phase 1` lessons 1–7 — get comfortable with Python
-3. ✅ Complete `Phase 1` lessons 8–15 — master NumPy, Pandas, Visualization
-4. ✅ Study `Phase 2 → Introduction to ML` — build conceptual clarity
-5. ✅ Work through `Phase 2 → Practical ML` — apply theory with hands-on projects
-6. 🔜 Move on to supervised learning algorithms (next phase)
-
----
 
 *This repository is actively maintained and expanded. Each phase builds on the previous one — follow the order for the best learning experience.*
