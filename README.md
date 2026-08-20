@@ -157,28 +157,3 @@ Key visual references used throughout the course:
 | **VS Code** | Code editor |
 
 ---
-
-## 🚀 How to Get Started
-
-```bash
-# 1. Clone the repository
-git clone https://github.com/yourusername/machine-learning.git
-cd machine-learning
-
-# 2. Create a virtual environment
-python -m venv venv
-source venv/bin/activate        # Mac/Linux
-venv\Scripts\activate           # Windows
-
-# 3. Install dependencies
-pip install numpy pandas matplotlib seaborn jupyter torch
-
-# 4. Start with Phase 0
-cd "Phase 0 : overview"
-jupyter notebook
-```
-
----
-
-
-*This repository is actively maintained and expanded. Each phase builds on the previous one — follow the order for the best learning experience.*
