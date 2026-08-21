@@ -144,16 +144,3 @@ Key visual references used throughout the course:
 
 ---
 
-## 🛠️ Tech Stack
-
-| Tool | Purpose |
-|---|---|
-| **Python 3.x** | Primary programming language |
-| **NumPy** | Numerical computing |
-| **Pandas** | Data manipulation |
-| **Matplotlib / Seaborn** | Data visualization |
-| **PyTorch / TensorFlow** | Tensor operations and deep learning |
-| **Jupyter Notebook** | Interactive coding environment |
-| **VS Code** | Code editor |
-
----
