@@ -132,15 +132,3 @@ A curated collection of supplementary materials including:
 - 🎥 Video lecture references
 
 ---
-
-## 📂 Some Imp Image
-
-Key visual references used throughout the course:
-
-- ML taxonomy diagrams
-- Algorithm comparison charts
-- Workflow and lifecycle illustrations
-- Concept diagrams (bias-variance tradeoff, overfitting, etc.)
-
----
-
