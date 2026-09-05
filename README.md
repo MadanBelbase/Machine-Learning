@@ -122,13 +122,3 @@ Two sub-sections covering **theory** and **practice**.
 
 ---
 
-## 📂 Resources
-
-A curated collection of supplementary materials including:
-
-- 📖 Reference books and PDFs
-- 🔗 Useful websites, courses, and documentation links
-- 📝 Cheatsheets for Python, NumPy, Pandas, and ML concepts
-- 🎥 Video lecture references
-
----
