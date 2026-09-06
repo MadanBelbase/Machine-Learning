@@ -111,14 +111,4 @@ Two sub-sections covering **theory** and **practice**.
 | Instance vs Model-Based | KNN-style memory vs learned models |
 | Challenges in ML | Overfitting, underfitting, bias, data quality |
 | ML Development Life Cycle | Problem → Data → Train → Evaluate → Deploy |
-
-### Practical ML (3 Topics)
-
-| Topic | Key Concepts |
-|---|---|
-| Tensors | Scalars, vectors, matrices, batches; PyTorch/TensorFlow basics |
-| Toy Project | End-to-end mini ML project (Iris / Titanic / MNIST) |
-| Framing an ML Problem | Defining tasks, metrics, constraints, and data needs |
-
 ---
-
