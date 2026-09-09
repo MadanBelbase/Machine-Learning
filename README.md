@@ -96,19 +96,3 @@ The starting point of the entire journey. This phase gives you:
 - Importing and creating Python modules
 
 ---
-
-## 📂 Phase 2 — Machine Learning Basics
-
-Two sub-sections covering **theory** and **practice**.
-
-### Introduction to ML (6 Topics)
-
-| Topic | Key Concepts |
-|---|---|
-| Types of ML | Supervised, Unsupervised, Reinforcement Learning |
-| Batch vs Online Learning | Offline training vs incremental updates |
-| Online Learning | Mini-batches, learning rate, concept drift |
-| Instance vs Model-Based | KNN-style memory vs learned models |
-| Challenges in ML | Overfitting, underfitting, bias, data quality |
-| ML Development Life Cycle | Problem → Data → Train → Evaluate → Deploy |
----
