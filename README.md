@@ -91,8 +91,4 @@ The starting point of the entire journey. This phase gives you:
 - Matplotlib and Seaborn
 - Line, bar, scatter, histogram, heatmap
 
-### File Handling & Modules (Lessons 14–15)
-- Reading/writing files (CSV, JSON, TXT)
-- Importing and creating Python modules
-
 ---
