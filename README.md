@@ -51,16 +51,3 @@ Overview   →   Python Basics   →   ML Foundations
 | **Phase 2** | ML Basics | ML types, lifecycle, challenges, tensors, projects | Phase 1 complete |
 
 ---
-
-## 📂 Phase 0 — Overview
-
-The starting point of the entire journey. This phase gives you:
-
-- A **bird's-eye view** of what Machine Learning is
-- How the phases connect to each other
-- What tools and libraries you'll use throughout the course
-- Setting up your development environment (Python, Jupyter, VS Code)
-
-> 💡 **Don't skip this.** Understanding the full map before starting prevents confusion later.
-
----
