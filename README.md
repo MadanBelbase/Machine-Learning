@@ -33,21 +33,3 @@ MACHINE LEARNING/
 ```
 
 ---
-
-## 🗺️ Learning Roadmap
-
-```
-Phase 0          Phase 1               Phase 2
-Overview   →   Python Basics   →   ML Foundations
-                                  ↙           ↘
-                           Concepts       Practical
-                         (Theory)        (Hands-on)
-```
-
-| Phase | Title | What You Learn | Prerequisite |
-|---|---|---|---|
-| **Phase 0** | Overview | Big picture of ML, roadmap orientation | None |
-| **Phase 1** | Python Foundations | Python, NumPy, Pandas, Visualization, File I/O | Basic computer literacy |
-| **Phase 2** | ML Basics | ML types, lifecycle, challenges, tensors, projects | Phase 1 complete |
-
----
