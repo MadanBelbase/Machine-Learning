@@ -92,19 +92,3 @@ Pandas is the primary tool for working with real-world datasets — loading, cle
 - Creating reusable `.py` modules
 
 ---
-
-## Skills You'll Have After Phase 1
-
-- Write clean, structured Python code
-- Work with arrays and matrices using NumPy
-- Load, clean, and transform datasets with Pandas
-- Visualize data distributions and relationships
-- Handle files and organize code into reusable modules
-
----
-
-## Recommended Practice
-
-- **Kaggle Learn** — Free Python and Pandas micro-courses
-- **LeetCode Easy (Python)** — Strengthen core Python logic
-- **Practice Dataset** — Download the Titanic or Iris dataset and explore it fully using only Pandas and Matplotlib before moving to Phase 2
